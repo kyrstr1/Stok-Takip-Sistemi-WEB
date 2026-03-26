@@ -1,6 +1,6 @@
 # 📦 Stok Takip Sistemi
 
-Modern, minimal ve kullanıcı dostu bir **stok yönetim uygulaması**.  
+Modern, minimal ve kullanıcı dostu bir **Web tabanlı stok yönetim uygulaması**.  
 
 ---
 
