@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Stok Yönetim Paneli</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="toast"></div>
+<div class="container">
+    <div class="top-bar">
+        <h1>Stok Yönetim Paneli</h1>
+        <button onclick="exportCSV()">⬇ Export</button>
+    </div>
+    <div class="form" id="formBox">
+        <input type="text" id="name" placeholder="Malzeme adı">
+        <input type="number" id="quantity" placeholder="Adet">
+        <input type="number" id="min" placeholder="Min stok">
+        <button id="addBtn">EKLE</button>
+        <button id="saveBtn" style="display:none;">KAYDET</button>
+        <button id="cancelBtn" style="display:none;">İPTAL</button>
+    </div>
+    <input type="text" id="search" placeholder=" 🔎 Ara">
+    <table>
+        <thead>
+            <tr>
+                <th>Malzeme</th>
+                <th>Adet</th>
+                <th>Min</th>
+                <th>Durum</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
